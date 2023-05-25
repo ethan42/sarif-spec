@@ -17,7 +17,7 @@ jobs:
         python-version: '3.8'
 
     - name: Install Dependencies
-      run: pip install requests
+      run: pip install requests jsonschema
 
     - name: Run validator
       run: python validate.py
