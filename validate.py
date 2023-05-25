@@ -14,6 +14,7 @@ def validate_json(data, schema):
     except ValidationError as e:
         print("Validation Error!")
         print(e)
+        raise
 
 def main():
     json_data = load_json('Schemata/sarif-schema-2.1.0.json')
